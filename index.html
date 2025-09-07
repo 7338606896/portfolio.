@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kiran T N – Portfolio</title>
+  <style>
+    /* Reset and base styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #f0f0f0;
+      min-height: 100vh;
+      scroll-behavior: smooth;
+    }
+    /* Header and nav */
+    header {
+      background: rgba(44, 62, 80, 0.95);
+      padding: 1.2rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.7);
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.2rem;
+      letter-spacing: 3px;
+      margin-bottom: 0.3rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-top: 0.5rem;
+    }
+    nav a {
+      color: #a9c1ff;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      cursor: pointer;
+    }
+    nav a:hover,
+    nav a.active {
+      background-color: #95a5a6;
+      color: #2c3e50;
+      transform: scale(1.1);
+    }
+    /* Main container */
+    main {
+      max-width: 900px;
+      margin: 3rem auto 6rem auto;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 2rem 3rem;
+      border-radius: 12px;
+      box-shadow: 0 0 15px 5px rgba(102, 126, 234, 0.5);
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      color: #a9c1ff;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+      border-bottom: 3px solid #667eea;
+      padding-bottom: 0.3rem;
+      margin-top: 2rem;
+      letter-spacing: 1.5px;
+    }
+    ul {
+      list-style: none;
+      padding-left: 1.2rem;
+      font-size: 1.1rem;
+      color: #d0d9ff;
+    }
+    ul li {
+      margin-bottom: 1rem;
+    }
+    /* Badges and lists */
+    .skills-list li, .certs-list li, .awards-list li, .coding-list li {
+      background: #95a5a6;
+      color: #2c3e50;
+      display: inline-block;
+      margin: 0.4rem 0.6rem 0.4rem 0;
+      padding: 0.4rem 1rem;
+      border-radius: 20px;
+      font-weight: 700;
+      cursor: default;
+    }
+    /* Links */
+    a {
+      color: #a9c1ff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a:hover {
+      color: #95a5a6;
+      text-decoration: underline;
+    }
+    /* Project titles */
+    .project-title {
+      font-weight: 700;
+      color: #d1dbff;
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+    /* Footer */
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      margin: 2rem 0 1rem 0;
+      color: #bbb;
+      background-color: rgba(44, 62, 80, 0.95);
+      padding: 1rem 0;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+    }
+    /* Responsive nav menu */
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 0.8rem;
+      }
+    }
+    
+    
+  </style>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Kiran T N</h1>
+    <nav>
+      <a href="#objective" class="active">Home</a>
+      <a href="#education">Education & Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications & Awards</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section id="objective">
+      <h2>Objective</h2>
+      <p>Seeking a challenging internship in software engineering to leverage my programming, networking, and application development skills. Aiming to contribute to projects that enhance user experiences and drive technological advancements.</p>
+    </section>
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Channabasaveshwara Institute of Technology</strong> (Dec 2022 - Jun 2026)<br />Electronics and Communication — CGPA: 8.2/10</li>
+        <li><strong>Sarvodaya PU College</strong> (Jun 2022)<br />Pre-University Education — Grade: 76.5%</li>
+        <li><strong>Chirec Public School</strong> (Aug 2020)<br />Secondary Education — Grade: 90.88%</li>
+      </ul>
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>Python</li>
+        <li>C Programming</li>
+        <li>C++</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>SQL</li>
+        <li>Tableau</li>
+        <li>Power BI</li>
+        <li>Computer Networks</li>
+        <li>DBMS</li>
+        <li>Operating Systems</li>
+        <li>OOPs</li>
+        <li>IoT: DHT11 sensor, Thingspeak, MQTT Broker temperature data</li>
+        <li>VS Code</li>
+        <li>GitHub</li>
+      </ul>
+      
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <span class="project-title">Breast Cancer Detection using AI (Jun 2023)</span>
+          <div>Tools: Python, Flask, NumPy, scikit-learn</div>
+          <div>Developed an AI-based system for breast cancer detection using machine learning and web deployment.</div>
+        </li>
+        <li>
+          <span class="project-title">SmartAgritech: IoT-Based Agricultural Monitoring and Crop Recommendation</span>
+          <div>Designed and implemented an IoT smart agriculture system integrating sensors to collect real-time data on NPK levels, temperature, humidity, pH, and rainfall.</div>
+        </li>
+      </ul>
+    </section>
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <ul class="certs-list">
+        <li>Python - Kaggle (Feb 2025)</li>
+        <li>HackerRank - Coding (Oct 2024)</li>
+        <li>Cybersecurity Analyst Job Simulation - TATA (Aug 2024)</li>
+        <li>C Programming - Greatlearningacademy (Jan 2024)</li>
+        <li>HTML - Simplylearn (Jan 2025)</li>
+      </ul>
+      <h2>Awards</h2>
+      <ul class="awards-list">
+        <li>2nd Place - Inter-College Coding Contest (May 2024)</li>
+        <li>Top 10 - Weather App at College Tech Fest (2023)</li>
+      </ul>
+    </section>
+    
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:tnkiran366@gmail.com">tnkiran366@gmail.com</a></p>
+      <p>Phone: +91 7338606896</p>
+      <p>Location: Gubbi, Tumkur, Karnataka, India</p>
+      <p>
+        Coding Profiles:<br/>
+        <a href="https://auth.geeksforgeeks.org/user/KiranTn" target="_blank" rel="noopener noreferrer">GeeksforGeeks</a><br/>
+        <a href="https://www.hackerrank.com/tnkiran366" target="_blank" rel="noopener noreferrer">HackerRank</a>
+      </p>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Kiran T N
+  </footer>
+
+  <script>
+    // Smooth scroll and active nav highlighting
+    const navLinks = document.querySelectorAll('nav a');
+
+    function changeActiveLink() {
+      let index = navLinks.length;
+
+      while(--index && window.scrollY + 60 < document.querySelector(navLinks[index].hash).offsetTop) {}
+
+      navLinks.forEach((link) => link.classList.remove('active'));
+      navLinks[index].classList.add('active');
+    }
+
+    changeActiveLink();
+    window.addEventListener('scroll', changeActiveLink);
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(link.hash).scrollIntoView({behavior: 'smooth'});
+      });
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

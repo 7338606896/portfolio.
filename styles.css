@@ -1,0 +1,123 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #f0f0f0;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+/* Header, nav */
+header {
+  background: rgba(44, 62, 80, 0.95);
+  padding: 1.2rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.7);
+}
+header h1 {
+  font-size: 2.2rem;
+  letter-spacing: 3px;
+  margin-bottom: 0.3rem;
+  text-align: center;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+nav a {
+  color: #a9c1ff;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+nav a:hover,
+nav a.active {
+  background-color: #95a5a6;
+  color: #2c3e50;
+  transform: scale(1.1);
+}
+
+/* Main container */
+main {
+  max-width: 900px;
+  margin: 3rem auto;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px 5px rgba(102, 126, 234, 0.5);
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+h2 {
+  color: #a9c1ff;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  border-bottom: 3px solid #667eea;
+  padding-bottom: 0.3rem;
+  margin-top: 2rem;
+}
+ul {
+  list-style: none;
+  padding-left: 1.2rem;
+  font-size: 1.1rem;
+  color: #d0d9ff;
+}
+ul li {
+  margin-bottom: 1rem;
+}
+
+/* Badges */
+.skills-list li, .certs-list li, .awards-list li, .coding-list li {
+  background: #95a5a6;
+  color: #2c3e50;
+  display: inline-block;
+  margin: 0.4rem 0.6rem 0.4rem 0;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-weight: 700;
+  cursor: default;
+}
+
+/* Links */
+a {
+  color: #a9c1ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+a:hover {
+  color: #95a5a6;
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  margin: 4rem 0 1rem 0;
+  color: #bbb;
+  background-color: rgba(44, 62, 80, 0.95);
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+/* Responsive nav menu */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}
